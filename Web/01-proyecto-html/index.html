@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diseño Web | Freelance Service</title>
+    </head>
+
+    <body> 
+      <header> 
+        <nav>  
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/about.html">Sobre nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+            </ul>
+        </nav>
+        <h1>KallS | Diseño Web</h1>
+        <p><strong>"Hacemos fácil lo difícil"</strong></p>
+      </header>
+    <main>
+      <section id="services">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Diseño web Frontend</li>
+            <li>Diseño Web Backend</li>
+            <li>Landing Page</li>
+            <li>Mantenimiento y soporte técnico</li>
+            <li>Desarrollo web Full-Stack</li>
+        </ul>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portafolio</h2>
+        <p>Algunos de nuestros proyectos recientes:</p>
+        <ul>
+            <li><a href="https://proyecto1.com"><img src="images/frontend_placeholder.jpg" alt="Proyecto Frontend" /></a></li>
+            <li><a href="https://proyecto2.com"><img src="images/proyecto2.jpg" alt="Proyecto Backend" /></a></li>
+            <li><a href="https://proyecto3.com"><img src="images/proyecto3.jpg" alt="Proyecto Full-Stack" /></a></li>
+        </ul>
+
+      </section>
+
+      <section id="reseñas">
+        <h2>Reseñas</h2>
+        <p>Lo que dicen nuestros clientes:</p>
+        <ol>
+          <li>"Excelente servicio y calidad en el diseño web."</li>
+          <li>"Muy profesional y comprometido con el trabajo."</li>
+          <li>"Recomiendo sus servicios a cualquier persona que necesite un sitio web profesional."</li>
+        </ol>
+      </section>
+
+      <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+            
+            <select id="project" name="project">
+                <option value="frontend">Desarrollo Frontend</option>
+                <option value="backend">Desarrollo Backend</option>
+                <option value="landing">Landing Page</option>
+                <option value="mantenimiento">Mantenimiento y Soporte Técnico</option>
+                <option value="fullstack">Desarrollo Full-Stack</option>
+            </select>
+
+            <input type="checkbox" id="contactado" name="contactado" />
+            <label for="contactado">Deseo ser contactado</label>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Enviar solicitud de contacto</button>
+        </form>
+        </section>
+        
+    <footer>
+            <p>&copy; 2026 KallS. Todos los derechos reservados.</p>
+    </footer>
+   </body>
+</html>

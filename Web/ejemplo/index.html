@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurea | Estudio de diseño y venta de páginas web</title>
+    <meta
+      name="description"
+      content="Diseñamos y vendemos sitios web a medida para marcas que cuidan los detalles. Entrega en tres semanas, hosting y dominio incluidos."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header" id="inicio">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Aurea, ir al inicio">
+          <svg
+            class="brand-mark"
+            viewBox="0 0 32 32"
+            width="28"
+            height="28"
+            aria-hidden="true"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="14.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            />
+            <path
+              d="M16 6 L24 16 L16 26 L8 16 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            />
+            <circle cx="16" cy="16" r="2" fill="currentColor" />
+          </svg>
+          <span class="brand-name">Aurea</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <span class="menu-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav class="main-nav" id="menu-principal" aria-label="Principal">
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+          </ul>
+          <a class="btn btn-outline btn-small" href="#contacto"
+            >Pedir cotización</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Sitios web que se sienten hechos a mano.</h1>
+            <p class="lead">
+              Diseñamos y vendemos páginas web a medida para marcas pequeñas y
+              medianas. Sin plantillas repetidas: cada sitio parte de tu
+              historia, tus colores y tu forma de vender.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#planes">Ver planes</a>
+              <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+            </div>
+          </div>
+
+          <div class="hero-demo">
+            <div class="browser" id="demo-sitio" data-theme="lino">
+              <div class="browser-bar">
+                <span class="dot"></span><span class="dot"></span
+                ><span class="dot"></span>
+                <span class="address">tumarca.com</span>
+              </div>
+              <div class="browser-body">
+                <div class="m-nav">
+                  <span class="m-logo"></span>
+                  <span class="m-links"><i></i><i></i><i></i></span>
+                </div>
+                <div class="m-hero">
+                  <div class="m-text">
+                    <span class="m-line m-line-lg"></span>
+                    <span class="m-line m-line-lg short"></span>
+                    <span class="m-line"></span>
+                    <span class="m-line short"></span>
+                    <span class="m-btn"></span>
+                  </div>
+                  <div class="m-image"><span class="m-sun"></span></div>
+                </div>
+                <div class="m-row"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+
+            <div
+              class="palette"
+              role="group"
+              aria-label="Elige una paleta para ver el ejemplo"
+            >
+              <span class="palette-label">Prueba una paleta</span>
+              <div class="palette-options">
+                <button
+                  type="button"
+                  class="swatch"
+                  data-theme="lino"
+                  aria-pressed="true"
+                >
+                  <span class="swatch-chip chip-lino"></span>Lino
+                </button>
+                <button
+                  type="button"
+                  class="swatch"
+                  data-theme="marfil"
+                  aria-pressed="false"
+                >
+                  <span class="swatch-chip chip-marfil"></span>Marfil
+                </button>
+                <button
+                  type="button"
+                  class="swatch"
+                  data-theme="noche"
+                  aria-pressed="false"
+                >
+                  <span class="swatch-chip chip-noche"></span>Noche
+                </button>
+              </div>
+            </div>
+            <p class="sr-only" id="demo-estado" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="container">
+          <ul class="facts">
+            <li>
+              <strong>3 semanas</strong
+              ><span>desde el brief hasta la publicación</span>
+            </li>
+            <li>
+              <strong>Diseño propio</strong
+              ><span>nada de plantillas reutilizadas</span>
+            </li>
+            <li>
+              <strong>Hosting y dominio</strong
+              ><span>incluidos el primer año</span>
+            </li>
+            <li>
+              <strong>3 meses de soporte</strong
+              ><span>cambios y ajustes sin costo</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section class="section section-white" id="servicios">
+        <div class="container split">
+          <div class="split-head">
+            <h2>Lo que vendemos</h2>
+            <p>
+              Cuatro servicios, todos con el mismo cuidado por la tipografía, el
+              espacio y la velocidad de carga.
+            </p>
+          </div>
+          <ul class="service-list">
+            <li>
+              <h3>Sitios institucionales</h3>
+              <p>
+                Presenta tu empresa, tu equipo y tus servicios con un diseño
+                claro que transmite confianza desde la primera pantalla.
+              </p>
+            </li>
+            <li>
+              <h3>Tiendas en línea</h3>
+              <p>
+                Catálogo, carrito y pagos configurados para que vendas sin
+                depender de un tercero. Fáciles de actualizar por tu equipo.
+              </p>
+            </li>
+            <li>
+              <h3>Landing pages</h3>
+              <p>
+                Una sola página pensada para un objetivo: reservar, comprar o
+                escribirte. Ideal para campañas y lanzamientos.
+              </p>
+            </li>
+            <li>
+              <h3>Mantenimiento y soporte</h3>
+              <p>
+                Actualizaciones, copias de seguridad y cambios de contenido
+                mensuales para que tu sitio siga igual de cuidado.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="section section-linen" id="proyectos">
+        <div class="container">
+          <div class="section-head">
+            <h2>Proyectos recientes</h2>
+            <p>
+              Tres marcas, tres paletas distintas, un mismo estándar de detalle.
+            </p>
+          </div>
+
+          <div class="projects">
+            <article class="project">
+              <div
+                class="thumb thumb-olivar"
+                role="img"
+                aria-label="Vista previa del sitio de Casa Olivar"
+              >
+                <span class="t-bar"></span>
+                <span class="t-title"></span>
+                <span class="t-sub"></span>
+                <span class="t-photo"></span>
+              </div>
+              <h3>Casa Olivar</h3>
+              <p>
+                Hotel boutique. Reservas directas y galería de habitaciones.
+              </p>
+            </article>
+
+            <article class="project">
+              <div
+                class="thumb thumb-norte"
+                role="img"
+                aria-label="Vista previa del sitio de Taller Norte"
+              >
+                <span class="t-bar"></span>
+                <span class="t-title"></span>
+                <span class="t-sub"></span>
+                <span class="t-photo"></span>
+              </div>
+              <h3>Taller Norte</h3>
+              <p>
+                Estudio de arquitectura. Portafolio de obras con fichas
+                técnicas.
+              </p>
+            </article>
+
+            <article class="project">
+              <div
+                class="thumb thumb-fleur"
+                role="img"
+                aria-label="Vista previa del sitio de Maison Fleur"
+              >
+                <span class="t-bar"></span>
+                <span class="t-title"></span>
+                <span class="t-sub"></span>
+                <span class="t-photo"></span>
+              </div>
+              <h3>Maison Fleur</h3>
+              <p>
+                Florería artesanal. Tienda en línea con pedidos por temporada.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESO -->
+      <section class="section section-white" id="proceso">
+        <div class="container">
+          <div class="section-head">
+            <h2>Cómo trabajamos</h2>
+            <p>
+              Un proceso corto y con fechas claras. Siempre sabes en qué etapa
+              estamos.
+            </p>
+          </div>
+
+          <ol class="steps">
+            <li>
+              <span class="step-num">1</span>
+              <h3>Conversación</h3>
+              <p>
+                Nos cuentas qué vendes, a quién y qué sitios te gustan. Te
+                enviamos una propuesta en 48 horas.
+              </p>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <h3>Diseño</h3>
+              <p>
+                Preparamos la página principal en una paleta y tipografía
+                pensadas para tu marca. Ajustas hasta que te guste.
+              </p>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <h3>Desarrollo</h3>
+              <p>
+                Construimos el sitio completo, optimizado para celular y
+                buscadores, y lo dejamos listo para que lo revises.
+              </p>
+            </li>
+            <li>
+              <span class="step-num">4</span>
+              <h3>Publicación</h3>
+              <p>
+                Conectamos tu dominio, lo publicamos y te enseñamos a editar el
+                contenido por tu cuenta.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- PLANES -->
+      <section class="section section-linen" id="planes">
+        <div class="container">
+          <div class="section-head">
+            <h2>Planes</h2>
+            <p>
+              Precios finales en dólares. Hosting y dominio del primer año
+              incluidos en todos los planes.
+            </p>
+          </div>
+
+          <div class="plans">
+            <article class="plan">
+              <h3>Esencial</h3>
+              <p class="plan-for">
+                Para presentarte en línea con una sola página.
+              </p>
+              <p class="price"><span class="price-from">desde</span> USD 490</p>
+              <ul class="plan-list">
+                <li>1 página de aterrizaje</li>
+                <li>Diseño adaptado a celular</li>
+                <li>Formulario de contacto</li>
+                <li>Entrega en 10 días</li>
+              </ul>
+              <a class="btn btn-outline" href="#contacto" data-plan="Esencial"
+                >Elegir Esencial</a
+              >
+            </article>
+
+            <article class="plan plan-featured">
+              <p class="plan-badge">El más elegido</p>
+              <h3>Profesional</h3>
+              <p class="plan-for">
+                Para empresas que necesitan un sitio completo.
+              </p>
+              <p class="price">
+                <span class="price-from">desde</span> USD 1.190
+              </p>
+              <ul class="plan-list">
+                <li>Hasta 6 páginas</li>
+                <li>Blog y panel de edición</li>
+                <li>Posicionamiento básico en Google</li>
+                <li>Entrega en 3 semanas</li>
+              </ul>
+              <a class="btn btn-gold" href="#contacto" data-plan="Profesional"
+                >Elegir Profesional</a
+              >
+            </article>
+
+            <article class="plan">
+              <h3>A medida</h3>
+              <p class="plan-for">
+                Para tiendas en línea o sistemas con necesidades propias.
+              </p>
+              <p class="price">Cotización</p>
+              <ul class="plan-list">
+                <li>Tienda con pagos en línea</li>
+                <li>Integraciones a tu medida</li>
+                <li>Diseño de marca completo</li>
+                <li>Plazo según el alcance</li>
+              </ul>
+              <a class="btn btn-outline" href="#contacto" data-plan="A medida"
+                >Pedir cotización</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIO -->
+      <section class="section section-white testimonial-section">
+        <div class="container">
+          <figure class="testimonial">
+            <blockquote>
+              <p>
+                Nos entregaron el sitio antes de lo prometido y las reservas
+                directas subieron desde el primer mes. Cuidaron hasta el espacio
+                entre las letras.
+              </p>
+            </blockquote>
+            <figcaption>
+              <strong>Valentina Rojas</strong>
+              <span>Directora de Casa Olivar</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- PREGUNTAS -->
+      <section class="section section-linen" id="preguntas">
+        <div class="container split">
+          <div class="split-head">
+            <h2>Preguntas frecuentes</h2>
+            <p>
+              Si no encuentras tu duda aquí, escríbenos y respondemos en un día
+              hábil.
+            </p>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>¿Puedo editar el sitio yo mismo?</summary>
+              <p>
+                Sí. Incluimos un panel sencillo para cambiar textos, fotos y
+                precios. Además, te damos una sesión de capacitación al
+                publicar.
+              </p>
+            </details>
+            <details>
+              <summary>¿El dominio queda a mi nombre?</summary>
+              <p>
+                Siempre. El dominio y el sitio son tuyos desde el día de la
+                entrega, sin contratos de permanencia.
+              </p>
+            </details>
+            <details>
+              <summary>¿Cómo se paga?</summary>
+              <p>
+                50% al aprobar la propuesta y 50% al publicar. Aceptamos
+                transferencia y tarjeta.
+              </p>
+            </details>
+            <details>
+              <summary>¿Qué pasa después de los 3 meses de soporte?</summary>
+              <p>
+                Puedes continuar con un plan de mantenimiento mensual o pedir
+                ajustes puntuales cuando los necesites.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="section section-white" id="contacto">
+        <div class="container split">
+          <div class="split-head">
+            <h2>Cuéntanos tu proyecto</h2>
+            <p>
+              Completa el formulario y te enviaremos una propuesta con precio y
+              plazo en 48 horas.
+            </p>
+            <p class="contact-direct">
+              También puedes escribir a
+              <a href="mailto:hola@aurea.studio">hola@aurea.studio</a>
+            </p>
+          </div>
+
+          <form class="form" id="form-contacto" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                autocomplete="name"
+                required
+              />
+              <p class="error" id="error-nombre" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+              <p class="error" id="error-email" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="plan">Plan de interés</label>
+              <select id="plan" name="plan">
+                <option value="">Aún no lo sé</option>
+                <option value="Esencial">Esencial</option>
+                <option value="Profesional">Profesional</option>
+                <option value="A medida">A medida</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Cuéntanos qué necesitas</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+              ></textarea>
+              <p class="error" id="error-mensaje" role="alert"></p>
+            </div>
+
+            <button class="btn btn-gold" type="submit">Enviar solicitud</button>
+            <p
+              class="form-status"
+              id="form-estado"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-name">Aurea</span>
+          <p>Estudio de diseño y venta de páginas web.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Pie de página">
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#planes">Planes</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <p class="copy">
+          &copy; <span id="anio">2026</span> Aurea. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web proyecto 00</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/about.html">Acerca de mí</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>Aprendiendo desarrollo web</h1>
+
+      <p>
+        Quiero aprender esto para poder realizar mejores muestras sobre mis
+        proyectos, <strong>formar un portafolio profesional</strong> y además
+        conseguir clientes y cobrar bien por este tipo de desarrollo.
+      </p>
+    </header>
+
+    <main>
+      <section id="objetivos">
+        <h2>Mis objetivos</h2>
+
+        <p>Mi objetivo es hacer una página web vendible por más de 600 USD.</p>
+
+        <h3>Objetivos a corto plazo</h3>
+
+        <p>
+          Aprender a hacer webs sencillas pero funcionales y ocupables en el día
+          a día.
+        </p>
+
+        <h3>Objetivos a largo plazo</h3>
+
+        <p>
+          Aprender a hacer webs complejas y con
+          <em>funcionalidades avanzadas</em>.
+        </p>
+      </section>
+
+      <section id="tecnologias">
+        <h2>Tecnologías que quiero aprender</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git y GitHub</li>
+        </ul>
+        <p>Actualmente estoy comenzando por <span>HTML</span>.</p>
+      </section>
+      <hr />
+      <section id="recursos">
+        <h2>Recursos que estoy usando</h2>
+
+        <ul>
+          <li><a href="https://github.com/Luroh">GitHub</a></li>
+          <li><a href="https://developer.mozilla.org/">MDN</a></li>
+        </ul>
+
+        <img src="images/html-logo.png" alt="Logo de HTML" />
+
+        <p>
+          Esta imagen representa el logo de HTML, usando una forma similar a un
+          escudo y el color naranja característico de la tecnología.
+        </p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <br />
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <br />
+          <label for="proyecto">Proyecto de interés:</label>
+
+          <select id="proyecto" name="proyecto">
+            <option value="landing">Landing Page</option>
+            <option value="web">Sitio Web</option>
+            <option value="otro">Otro</option>
+          </select>
+          <br />
+
+          <input type="checkbox" id="contactado" name="contactado" />
+          <label for="contactado">Acepto ser contactado</label>
+          <br />
+
+          <button type="submit">Enviar solicitud</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Mi primer proyecto de desarrollo web. <br />Mientras aprendo
+        HTML.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica CSS 1</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header id="inicio">
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <h1 class="titulo-principal">Aprendiendo selectores CSS</h1>
+
+      <p class="intro">
+        Estoy aprendiendo a seleccionar elementos de forma específica usando
+        etiquetas, clases e IDs.
+      </p>
+    </header>
+
+    <main>
+      <section id="servicios" class="seccion servicios">
+        <h2>Servicios</h2>
+
+        <p>Desarrollo web frontend.</p>
+
+        <p class="destacado">Landing pages profesionales.</p>
+
+        <a href="#">Ver servicios</a>
+      </section>
+
+      <section id="proyectos" class="seccion proyectos">
+        <h2>Proyectos</h2>
+
+        <p>Estos son algunos proyectos de práctica.</p>
+
+        <div class="tarjeta destacada">
+          <h3>Proyecto 1</h3>
+          <p>Una landing page sencilla.</p>
+          <a href="#">Ver proyecto</a>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Proyecto 2</h3>
+          <p>Una web multipágina.</p>
+          <a href="#">Ver proyecto</a>
+        </div>
+      </section>
+
+      <section id="contacto" class="seccion contacto">
+        <h2>Contacto</h2>
+
+        <p>Escríbeme para conversar sobre tu proyecto.</p>
+
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" />
+
+          <button class="boton principal" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Práctica del módulo CSS 1.</p>
+
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+  </body>
+</html>
